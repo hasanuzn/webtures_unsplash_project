@@ -5,7 +5,7 @@
         @foreach ($photos as $photo)
         <div class="col-md-3">
             <div class="item" style="background-image: url({{ $photo->urls->small }})">
-            <a href="{{ $photo->urls->regular }}" data-toggle="lightbox" class="zoom" data-type="image" data-gallery="gallery" ></a>
+            <a href="{{ $photo->urls->regular }}" data-toggle="lightbox" class="zoom" data-type="image" data-gallery="gallery" data-footer="{{ $photo->description }}"></a>
             <div class="likes">
                 <span>{{ $photo->likes }}</span>
                 <i class="far fa-heart"></i>
