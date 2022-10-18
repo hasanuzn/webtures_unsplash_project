@@ -9,7 +9,8 @@
                 <div class="col-md-6 phr-info">
                     <div class="phr-name">{{ $photographer->name }}</div>
                     <div class="phr-username">{{ '@'.$photographer->username }}</div>
-                    <div class="phr-location">{{ $photographer->location }}</div>
+                    <div class="phr-location"><i class="fas fa-map-marker-alt"></i> {{ $photographer->location }}</div>
+                    <div class="phr-unsplash"><i class="fas fa-link"></i> <a href="{{ $photographer->profile_url }}" target="_blank">Unsplash</a></div>
                 </div>
                 <div class="col-md-3 phr-photos-total"><span>{{ $photographer->total_photos }}</span><small>PHOTOS</small></div>
                 <div class="col-md-3 phr-likes-total"><span>{{ $photographer->total_likes }}</span><small>LIKES</small></div>
